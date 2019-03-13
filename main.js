@@ -219,7 +219,7 @@ const pets = [
 const animalCardBuilder = () => {
     let domString = '';
     pets.forEach((pet) => {
-        domString += `<div class = "container">`
+        domString += `<div class ="card">`
         domString += `<h3>${pet.name}</h3>`
         domString += `<h3>${pet.color}</h3>`
         domString += `<h3>${pet.specialSkill}</h3>`
@@ -227,11 +227,10 @@ const animalCardBuilder = () => {
         domString += `<h3>${pet.imageUrl}</h3>`
         domString += `</div>`
 
-
     })
 
-    printToDom('animals', domString);
-}
+    printToDom('pets', domString);
+};
 
 const init = () => {
     animalCardBuilder();
