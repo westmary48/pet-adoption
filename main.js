@@ -235,22 +235,13 @@ const animalCardBuilder = (petsArray) => {
 const buttonClick = (e) => {
     const buttonId = e.target.id;
     const selectedPets = [];
-    pets.forEach((pet) => {
-         if ( pet.type === 'dog') {
-            const filteredDog = pets.filter(x => x.type === pets.type);
-            console.log(filteredDog);
-            // animalCardBuilder(filteredDog)
-        }else if ( pet.type === 'cat') {
-            const filteredCat = pets.filter(x => x.type === pets.type);
-            console.log(filteredCat);
-            // animalCardBuilder(filteredCat);
-        } else if ( pet.type === 'dino') {
-            const filteredDino = pets.filter(x => x.type === pets.type);
-            console.log(filteredDino);
-            // animalCardBuilder(filteredDino);
+    pets.forEach((monkeyButt) => {
+
+         if ( monkeyButt.type === buttonId) {
+             selectedPets.push(monkeyButt);
         }
     });
-        if(buttonId === 'All'){
+        if(buttonId === 'all'){
         animalCardBuilder(pets);
         } else {
        animalCardBuilder(selectedPets);
@@ -259,15 +250,15 @@ const buttonClick = (e) => {
 
 
 const buttonEvents = () => {
-    document.getElementById('Cats').addEventListener('click', buttonClick);
-    document.getElementById('Dogs').addEventListener('click', buttonClick);
-    document.getElementById('Dinos').addEventListener('click', buttonClick);
-    document.getElementById('All').addEventListener('click', buttonClick);
+    document.getElementById('cat').addEventListener('click', buttonClick);
+    document.getElementById('dog').addEventListener('click', buttonClick);
+    document.getElementById('dino').addEventListener('click', buttonClick);
+    document.getElementById('all').addEventListener('click', buttonClick);
 }
 
 const init = () => {
-    animalCardBuilder(pets);
     buttonEvents();
+    animalCardBuilder(pets);
 };
 
 init();
