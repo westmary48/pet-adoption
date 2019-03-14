@@ -2,6 +2,11 @@ body {
     background-color: aquamarine;
 };
 
+#pets {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    };
+
 .card {
     text-align: center;
     width: 30%;
@@ -9,9 +14,4 @@ body {
     margin-right: 40px;
     margin-top: 33px;
     background-color:#F5F5F5;
-};
-
-#pets {
-display: flex;
-/* -webkit-flex-flow: row wrap; */
 };
