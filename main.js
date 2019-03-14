@@ -219,12 +219,12 @@ const pets = [
 const animalCardBuilder = (petsArray) => {
     let domString = '';
     petsArray.forEach((pet) => {
-        domString += `<div class ='card>`
+        domString += `<div class ='card'>`
         domString += `<h3>${pet.name}</h3>`
         domString += `<h3>${pet.color}</h3>`
         domString += `<h3>${pet.specialSkill}</h3>`
         domString += `<h3>${pet.type}</h3>`
-        domString += `<h3>${pet.imageUrl}</h3>`
+        domString += `<img class= "img" src= ${pet.imageUrl}>`
         domString += `</div>`
 
     })
@@ -236,22 +236,27 @@ const buttonClick = (e) => {
     const buttonId = e.target.id;
     const selectedPets = [];
     pets.forEach((pet) => {
-        if(buttonId === 'All'){
-            animalCardBuilder(pets);
-        } else if ( pet.type === 'dog') {
-            const filteredDog = pet.filter(x => x.type === type);
-            animalCardBuilder(filteredDog)
+         if ( pet.type === 'dog') {
+            const filteredDog = pets.filter(x => x.type === pets.type);
+            console.log(filteredDog);
+            // animalCardBuilder(filteredDog)
         }else if ( pet.type === 'cat') {
-            const filteredCat = pet.filter(x => x.type === type);
-            animalCardBuilder(filteredCat)
+            const filteredCat = pets.filter(x => x.type === pets.type);
+            console.log(filteredCat);
+            // animalCardBuilder(filteredCat);
         } else if ( pet.type === 'dino') {
-            const filteredDino = pet.filter(x => x.type === type);
-            animalCardBuilder(filteredDino)
-
-        } else {
-    animalCardBuilder(selectedPets);
-}
+            const filteredDino = pets.filter(x => x.type === pets.type);
+            console.log(filteredDino);
+            // animalCardBuilder(filteredDino);
+        }
     });
+        if(buttonId === 'All'){
+        animalCardBuilder(pets);
+        } else {
+       animalCardBuilder(selectedPets);
+}
+};
+
 
 const buttonEvents = () => {
     document.getElementById('Cats').addEventListener('click', buttonClick);
