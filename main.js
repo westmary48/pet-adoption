@@ -252,18 +252,6 @@ const buttonClick = (e) => {
 }
 };
 
-const petColor = (e) => {
-    pets.forEach((color))
-        if(pets[i].type === 'cat') {
-        document.getElementById(`footer${[i]}`).style.backgroundColor = '#2BBBAD';
-        } else if (pets[i].type === 'dog') {
-        document.getElementById(`footer${[i]}`).style.backgroundColor = '#ffbb33';
-        } else if (pets[i].type === 'dino') {
-        document.getElementById(`footer${[i]}`).style.backgroundColor = '#4285F4';
-        }
-    }
-
-
 const buttonEvents = () => {
     document.getElementById('cat').addEventListener('click', buttonClick);
     document.getElementById('dog').addEventListener('click', buttonClick);
