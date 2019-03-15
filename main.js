@@ -220,12 +220,16 @@ const animalCardBuilder = (petsArray) => {
     let domString = '';
     petsArray.forEach((pet) => {
         domString += `<div class ='card'>`
+        domString += `<div class = 'name'>`
         domString += `<h3>${pet.name}</h3>`
+        domString += `</div>`
+        domString += `<img class= "img" src= ${pet.imageUrl}>`
         domString += `<h3>${pet.color}</h3>`
         domString += `<h3>${pet.specialSkill}</h3>`
+        domString += `<footer class = 'type'>`
         domString += `<h3>${pet.type}</h3>`
-        domString += `<img class= "img" src= ${pet.imageUrl}>`
         domString += `</div>`
+        domString += `</footer>`
 
     })
 
@@ -247,7 +251,6 @@ const buttonClick = (e) => {
        animalCardBuilder(selectedPets);
 }
 };
-
 
 const buttonEvents = () => {
     document.getElementById('cat').addEventListener('click', buttonClick);
