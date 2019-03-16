@@ -29,12 +29,12 @@ We created an adoption website for pets. There are 3 different types of pets. Th
 5. Javascript
 
 ## Screenshot
-![alt text](https://raw.githubusercontent.com/westmary48/adoption-website/master/images/imageone.png)
+![alt text](https://raw.githubusercontent.com/westmary48/pet-adoption/master/images/imageone.png)
 
-![alt text](https://raw.githubusercontent.com/westmary48/adoption-website/master/images/imagetwo.png)
+![alt text](https://raw.githubusercontent.com/westmary48/pet-adoption/master/images/imagetwo.png)
 
-![alt text](https://raw.githubusercontent.com/westmary48/adoption-website/master/images/imagethree.png)
+![alt text](https://raw.githubusercontent.com/westmary48/pet-adoption/master/images/imagethree.png)
 
-![alt text](https://raw.githubusercontent.com/westmary48/padoption-website/master/images/imagefour.png)
+![alt text](https://raw.githubusercontent.com/westmary48/pet-adoption/master/images/imagefour.png)
 
-![alt text](https://raw.githubusercontent.com/westmary48/adoption-website/master/images/imagefive.png)
+![alt text](https://raw.githubusercontent.com/westmary48/pet-adoption/master/images/imagefive.png)
