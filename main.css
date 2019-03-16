@@ -33,9 +33,13 @@ body {
     font: bold;
 }
 
-.type {
-    background: color
+/* .type {
+    background: linear-gradient(rgb(9, 207, 233), rgb(4, 127, 143));
 }
+.type {
+    background: linear-gradient(rgb(9, 207, 233), rgb(4, 127, 143));
+} */
+
 
 #cat {
     padding: 5px 10px;
@@ -82,4 +86,5 @@ body {
     justify-content: center;
     align-content: space-between;
 }
+
 
