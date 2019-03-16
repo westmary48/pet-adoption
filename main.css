@@ -87,4 +87,26 @@ body {
     align-content: space-between;
 }
 
+.dino {
+    background: linear-gradient(hsla(21, 85%, 51%, 1), hsla(21, 85%, 61%, 1));
+    padding: 15px 10px;
+    font: bold;
+
+
+}
+
+.cat {
+    background: linear-gradient(rgb(9, 207, 233), rgb(4, 127, 143));
+    padding: 15px 10px;
+    font: bold;
+
+
+}
+
+.dog {
+    background: linear-gradient(rgb(67, 209, 39), rgb(123, 196, 40));
+    padding: 10px 15px;
+    font: bold;
+
+}
 
