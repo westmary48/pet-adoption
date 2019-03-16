@@ -8,6 +8,9 @@ body {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     width: 30%;
     box-shadow:5px 5px 1px;
@@ -33,14 +36,6 @@ body {
     font: bold;
 }
 
-/* .type {
-    background: linear-gradient(rgb(9, 207, 233), rgb(4, 127, 143));
-}
-.type {
-    background: linear-gradient(rgb(9, 207, 233), rgb(4, 127, 143));
-} */
-
-
 #cat {
     padding: 5px 10px;
     font-size: 30px;
@@ -49,6 +44,7 @@ body {
     background: linear-gradient(rgb(9, 207, 233), rgb(4, 127, 143));
     border-radius: 10px;
     box-shadow: 2px 2px 15px -5px hsla(0, 0%, 0%, 1);
+    margin-top: auto;
 }
 
 #dog {
@@ -59,6 +55,7 @@ body {
     background: linear-gradient(rgb(67, 209, 39), rgb(123, 196, 40));
     border-radius: 10px;
     box-shadow: 2px 2px 15px -5px hsla(0, 0%, 0%, 1);
+    margin-top: auto;
 }
 
 #dino {
@@ -69,6 +66,8 @@ body {
     background: linear-gradient(hsla(21, 85%, 51%, 1), hsla(21, 85%, 61%, 1));
     border-radius: 10px;
     box-shadow: 2px 2px 15px -5px hsla(0, 0%, 0%, 1);
+    margin-top: auto;
+
 }
 
 #all {
@@ -105,8 +104,15 @@ body {
 
 .dog {
     background: linear-gradient(rgb(67, 209, 39), rgb(123, 196, 40));
-    padding: 10px 15px;
+    padding: 15px 10px;
     font: bold;
 
 }
+
+.specialSkill {
+margin: 10px;
+padding: 15px 10px;
+}
+
+
 

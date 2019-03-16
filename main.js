@@ -225,11 +225,11 @@ const animalCardBuilder = (petsArray) => {
         domString += `</div>`
         domString += `<img class= "img" src= ${pet.imageUrl}>`
         domString += `<h3>${pet.color}</h3>`
-        domString += `<h3>${pet.specialSkill}</h3>`
-        // domString += `<footer class = 'type'>`
+        domString += `<h3 class = "specialSkill">${pet.specialSkill}</h3>`
+        domString += `<footer>`
         domString += `<div class="${pet.type}">${pet.type}</div>`
+        domString += `</footer>`
         domString += `</div>`
-        // domString += `</footer>`
     //     if(petsArray.type === 'dino') {
     //         document.getElementById("footer").style.backgroundColor = '#99C262';
     //     } else if (petsArray.type === 'cat') {
