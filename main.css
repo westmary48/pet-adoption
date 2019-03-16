@@ -87,4 +87,15 @@ body {
     align-content: space-between;
 }
 
+.dino {
+    background-color: aquamarine;
+}
+
+.cat {
+    background-color: red;
+}
+
+.dog {
+    background-color: blue;
+}
 

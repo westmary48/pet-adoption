@@ -226,16 +226,16 @@ const animalCardBuilder = (petsArray) => {
         domString += `<img class= "img" src= ${pet.imageUrl}>`
         domString += `<h3>${pet.color}</h3>`
         domString += `<h3>${pet.specialSkill}</h3>`
-        domString += `<footer class = 'type'>`
-        domString += `<h3>${pet.type}</h3>`
+        // domString += `<footer class = 'type'>`
+        domString += `<div class="${pet.type}">${pet.type}</div>`
         domString += `</div>`
-        domString += `</footer>`
-        if(petsArray.type === 'dino') {
-            document.getElementById("footer").style.backgroundColor = '#99C262';
-        } else if (petsArray.type === 'cat') {
-        document.getElementById("footer").style.backgroundColor = '#F8D347';
-    } else if ((petsArray.type === 'dog'))
-    document.getElementById("footer").style.backgroundColor = '#FF6C60';
+        // domString += `</footer>`
+    //     if(petsArray.type === 'dino') {
+    //         document.getElementById("footer").style.backgroundColor = '#99C262';
+    //     } else if (petsArray.type === 'cat') {
+    //     document.getElementById("footer").style.backgroundColor = '#F8D347';
+    // } else if ((petsArray.type === 'dog'))
+    // document.getElementById("footer").style.backgroundColor = '#FF6C60';
     })
 
     printToDom('pets', domString);
